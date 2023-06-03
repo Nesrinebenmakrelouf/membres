@@ -1,0 +1,719 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #e9e9e9;
+}
+
+#header {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  font-family: Dosis, sans-serif;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0px;
+  background-color: #e9e9e9;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+  right: 13rem;
+
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 30px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #726f6f;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+  color: rgb(0, 38, 93);
+}
+
+#navbar li a.active {
+  color: #726f6f;
+}
+
+
+#navbar li a:hover::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: rgb(29, 83, 119);
+  position: absolute;
+  bottom: -4px;
+  left: 29px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  color: #053173;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #e9e9e9;
+  padding: 3px;
+  list-style: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+  color: #053173;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.welcome {
+  height: 30rem;
+  background-image: url(navbar.png);
+  background-size: 1500px;
+  background-repeat: no-repeat;
+}
+.welcome h1 {
+  display: inline-block;
+  color: #ededed;
+  font-family: serif;
+  font-size: 300%;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.social-media {
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+.social-media img {
+  padding: 4px;
+  height: 50px;
+  width: 45px;
+}
+.welcome button {
+  float: right;
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 60px;
+  border-color: #cac5c5;
+  background-image: linear-gradient(to right bottom, rgb(0, 83, 156), #053173);
+  position: relative;
+  top: 5rem;
+  right: 10rem;
+  font-family: "Konkhmer Sleokchher", cursive;
+  color: white;
+}
+
+.welcome button:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(172, 172, 172),
+    rgb(255, 255, 255)
+  );
+  color: black;
+}
+
+/* Header end  */
+.apropos {
+  font-family: cursive;
+  font-size: 200%;
+  text-align: center;
+  color: rgb(0, 38, 93);
+  float: right;
+  width: 700px;
+  margin-top: -2rem;
+}
+.apropos-a-nous img {
+  padding: 20px;
+  height: 30rem;
+}
+.apropos h3 {
+  display: inline-block;
+  text-align: left;
+  padding-right: 5px;
+  margin-top: 4rem;
+  font-size: 80%;
+  font-family: cursive;
+  color: rgb(1, 8, 14);
+}
+
+.titre h2 {
+  margin-top: 80px;
+  font-family: cursive;
+  font-size: 40px;
+  color: rgb(0, 38, 93);
+}
+.titre h3 {
+  color: #666565;
+  font-family: cursive;
+  font-size: 200%;
+}
+.menu {
+  margin-top: 0px;
+}
+.menu .contenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.menu .contenu .box {
+  width: 350px;
+  margin: 40px;
+  border: 20px solid #f7f4f4;
+  box-shadow: 20px 15px 35px #777373;
+  color: #4769e6;
+  font-family: fantasy;
+  font-size: 25px;
+}
+.menu .contenu .box .imbox {
+  position: relative;
+  width: 100px;
+  height: 300px;
+}
+.menu .contenu .box .imbox .img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100 px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* apropos de nous debut */
+
+.aboutus {
+  background-image: url(About_us_page-cuate_1.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  margin-top: 50px;
+  height: 40rem;
+  position: relative;
+}
+.aboutus .plane img {
+  position: absolute;
+  height: 30rem;
+  width: 15rem;
+  top: 10.7rem;
+  left: 2rem;
+}
+.aboutus h1 {
+  font-family: "Bitter", serif;
+  font-size: 240%;
+  color: rgb(0, 38, 93);
+  position: absolute;
+  top: 21%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.aboutus h3 {
+  font-family: "Bitter", serif;
+  font-size: 140%;
+  color: rgb(173, 173, 173);
+  position: absolute;
+  top: 39%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+.seemore-button {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(166, 166, 166),
+    rgb(255, 255, 255)
+  );
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font-family: "Bitter", serif;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.seemore-button:hover {
+  background-image: linear-gradient(
+    to right top,
+    rgb(0, 38, 93),
+    rgb(0, 100, 240)
+  );
+  color: rgb(255, 255, 255);
+}
+
+.his .zone {
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 150px 150px 20px 220px;
+}
+
+.zone {
+  position: relative;
+  width: 1050px;
+  height: 650px;
+ 
+  border: 5px solid  rgb(44, 99, 177);
+  border-radius: 60px;
+}
+.his .zone h1 {
+  margin-top: 50px;
+  font-size: 45px;
+  color: rgb(35, 84, 152);
+}
+.his .zone h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: inherit;
+  margin-left: 15px;
+}
+
+.his .zone h4 {
+  color: rgb(157, 154, 154);
+  font-weight: 50;
+}
+
+/* apropos de nous fin */
+
+
+
+/* contact debut */
+
+  
+
+.nous-contacter{
+  text-align: center;
+
+}
+.nous-contacter .titre {
+   margin-top: 50px;
+   font-family:cursive;
+   font-size: 40px;
+   color:  rgb(0,38,93);
+   
+}
+.nous-contacter .titre span {
+  font-weight:bold;
+  color: rgb(108, 106, 105);
+}
+ .sous-titre h2 {
+  margin: 25px;
+  color: rgb(108, 105, 105);
+  font-size: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 12px;
+  margin: 80px;
+
+}
+.grid-container img {
+  width: 100%; 
+  height: auto; 
+  margin-top: 2px;
+}
+.grid-container .grid-item{
+   background-image: linear-gradient(to right bottom ,rgb(11, 66, 144),rgb(4, 49, 112));
+}
+.grid-container .grid-item h3 {
+align-items: center;
+margin-left: 30px;
+}
+.groupe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+
+.grid-container .grid-item {
+     display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+line-height: 1.8;
+
+}
+
+
+.grid-container .grid-item .header-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 130%;
+  color: rgb(255, 255, 255);
+}
+.grid-container .grid-item h1{
+  font-size: 200%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  align-items: center;
+}
+.grid-container .grid-item h3{
+ font-size: 100%;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: rgb(185, 185, 185);
+ align-items: center;
+}
+ form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-hor {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.form-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  
+}
+.grid-item  .input {
+  background: transparent;
+border: 2px solid #fff;
+border-radius: 50px;
+outline: none;
+padding-left: 10px;
+color: #9a1b1b;
+font-size: 16px;
+}
+/*background: transparent;
+border: 2px solid #fff;
+border-radius: 50px;
+outline: none;
+padding-left: 10px;
+color: #fff;
+font-size: 16px;*/
+label {
+  
+  margin-bottom: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(239, 234, 234);
+}
+
+.input {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 10px;
+  outline: solid 1px rgb(226, 221, 221);
+  border-radius: 50px
+}
+textarea {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 10px;
+  outline: solid 1px rgb(226, 221, 221);
+  border-radius: 50px
+
+}
+input:focus,
+textarea:focus{
+  border: solid 2px ;
+  border-color: white;
+}
+button[type="submit"] {
+  padding: 10px;
+  background-color: slateblue;
+  color: #fff;
+  border: none;    
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+  .menu {
+      margin-top:0px;
+    }
+    .menu .contenu {
+      display: flex;
+      justify-content: center;
+    }
+    .menu .contenu .box {
+      width: 350px;
+      margin: 40px;
+    }
+    .menu .contenu .box .imbox {
+      position: relative;
+      width:200px;
+      height: 300px; 
+    }
+
+    
+
+
+/* contact fin */
+
+
+/* debut Projet */
+
+.listebar {
+  width: 18rem;
+  height: 12rem;
+  padding: 20px  30px;
+  margin-top:9rem;
+  float:right;
+  margin-right: 5rem;
+  background-color: #c2c5c521;
+  box-shadow: 0 1.4rem 2rem rgba(64, 62, 62, 0.2);
+  border-radius: 15px;
+}
+.listebar h2 {
+  font-size: 30px;
+  color:#181877 ;
+}
+.recharche {
+  margin-top: 12rem;
+  margin-bottom:4rem;
+  
+}
+.recharche h1{
+  color: #251495;
+  font-size: 5rem;
+  font-family:fantasy;
+  margin-left: 8rem;
+}
+.recharche h3 {
+  color: #939393;
+  font-size: 20px;
+  font-family:cursive;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.recharche img {
+  height: 10rem;
+  width: 9rem;
+  margin-left:25rem ;
+  margin-top: 3rem;
+
+}
+.international {
+
+  padding: 100px 90px 100px 90px ;
+}
+.cadre {
+  width: 70%;
+  height: 22rem;
+  padding: 5rem;
+  padding-top:-4rem;
+  background-color: #dbf4ff21;
+  box-shadow: 0 1.4rem 2rem rgba(64, 62, 62, 0.2);
+  display:inline-block;
+  align-items: center;
+  border-radius: 8rem;
+  margin: 10px;
+}
+.titrepub  {
+  font-family: "Bitter", serif;
+  font-size:30px;
+  text-align: center;
+  color: rgb(0, 38, 93);
+  align-items: center;
+
+
+}
+.infopub {
+  font-size: 15px;
+}
+
+.acceder {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 120px;
+  border: none;
+  display:inline-block;
+  transform: translate(35rem, -1rem);
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(13, 31, 121),
+    rgb(255, 255, 255)
+  );
+  color: #000000;
+  cursor: pointer;
+  font-family: "Bitter", serif;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.acceder:hover {
+  background-image: linear-gradient(
+    to right top,
+    rgb(22, 73, 144),
+    rgb(20, 111, 238)
+  );
+  color: rgb(246, 241, 241);
+}
+.infopub a {
+  color: #000000;
+}
+/*fin projet*/
+
+
+/*Soutnance */
+.listes{
+  font-size: 3rem;
+  color: #053173;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  margin-left: 10rem;
+  padding-left: 12rem;
+  } 
+  .listesou #img1 {
+    float: left;
+    margin-top: -10rem;
+  }
+  .listesou #img2 {
+  float: right;
+  margin-top: -18rem;
+  }
+  .cadres {
+    width: 75%;
+    height: 15rem;
+    padding: 5rem;
+    padding-top:2rem;
+    background-color: #dbf4ff21;
+    box-shadow: 0 1.4rem 2rem rgba(64, 62, 62, 0.2);
+    display:inline-block;
+    align-items: center;
+    border-radius: 8rem;
+    margin: 10px;
+    margin-left: 11rem;
+  }
+  .titres {
+    font-family: "Bitter", serif;
+    font-size:40px;
+    text-align: center;
+    color: rgb(0, 38, 93);
+    align-items: center;
+    
+  
+  }
+  .infos {
+    font-size:20px;
+  }
+  
+  /*fin soutnance*/
+
+  /*membres */
+.titre1 {
+  font-size: 30px;
+  color: #251495;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+#imge {
+  float: right;
+  height: 50rem;
+  width: 50rem;
+  margin-top: -8rem;
+}
+ .nom-equipe {
+  font-size: 30px;
+  color: #251495;
+  font-weight: 20px;
+  margin-left: 1rem;
+  padding-top: 3rem;
+ }
+ 
+ .divchef {
+  color: #000000;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+ margin-left: 2rem;
+ }
+ .divmembre {
+  color: #060305;
+  font-size: 20px;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-family:Arial, Helvetica, sans-serif;
+ } 
+.infomembre {
+  margin-left: 2rem;
+  color: #050202;
+  font-size: 15px;
+
+}
+.mail {
+  color:#8d8d8d ;
+  margin-left: 2rem;
+}
+
+  /*fin membres*/
+  .footer {
+    background-color: rgb(4, 49, 112);
+    color: aliceblue;
+  }
+  .footer h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  .footer h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+  }
+  .copyright {
+    font-size: 18px;
+  }
